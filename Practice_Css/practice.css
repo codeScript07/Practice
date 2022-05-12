@@ -1,0 +1,19 @@
+.btn,
+input[type=button]{
+    text-decoration:none;
+    padding:15px 30px;
+    display: inline-block;
+    border-radius: 100px;
+    color:white;
+    background-color:darkcyan;
+}
+input[type=button]{
+   border:none;
+   font-size: 20px;
+   cursor: pointer;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    gap: 20pt;
+}
