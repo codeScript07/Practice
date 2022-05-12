@@ -241,7 +241,7 @@
 // const age1 = CalcAge(1890);
 // console.log(age1);
 
-// /// Example of Functon Expression ///
+// /// Example of Function Expression ///
 
 // const CalcAge2 = function(birthyear){
 //     return 2022 - birthyear;
@@ -268,3 +268,18 @@
 //     return a + b ;
 // }
 // console.log(solveMe(1,2));
+
+///-----------  Function Calling other function --------- ///
+
+function cutFruitPiece(fruit){
+    return fruit * 2;
+} 
+function cutprocessor (apple,orange){
+    const applePieces = cutFruitPiece(apple);
+    const orangePieces = cutFruitPiece(orange);
+
+    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} piece of orange.`
+    return juice; 
+
+}
+console.log(cutprocessor(4,5));
